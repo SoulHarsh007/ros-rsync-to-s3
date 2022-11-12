@@ -1,0 +1,57 @@
+#
+#  888888ba   .88888.  .d88888b  dP     888888ba                                           dP               .d88888b  d8888b.
+#  88    `8b d8'   `8b 88.    "' 88     88    `8b                                          88               88.    "'     `88
+# a88aaaa8P' 88     88 `Y88888b.       a88aaaa8P' .d8888b. dP    dP 88d888b. .d8888b.    d8888P .d8888b.    `Y88888b.  aaad8'
+#  88   `8b. 88     88       `8b        88   `8b. Y8ooooo. 88    88 88'  `88 88'  `""      88   88'  `88          `8b     `88
+#  88     88 Y8.   .8P d8'   .8P dP     88     88       88 88.  .88 88    88 88.  ...      88   88.  .88    d8'   .8P     .88
+#  dP     dP  `8888P'   Y88888P  88     dP     dP `88888P' `8888P88 dP    dP `88888P'      dP   `88888P'     Y88888P  d88888P
+#                                                               .88
+#                                                           d8888P
+#
+# Copyright (c) 2022, SoulHarsh007
+#
+# ROS: Rsync to S3 mirror utility - Experimental Release
+#
+# Build: RYDN-SHINY-KITTEN-HEROBRINE
+# Version: v0.0.1-alpha
+# Mirrors Rsync repositories as-is to S3 Buckets!
+
+# Concurrency - Modify only if you have a good bandwidth connection, supported values:
+# - true: Sets concurrency to maximum value - experimental - consumes more memory
+# - false: Sets concurrency to lowest possible value - stable - default
+maxConcurrency: false
+# Cloning Directory - The directory at which content will be copied from the RSync Mirror
+cloneDir: rsync-clone-dir
+# Target - details for the S3 buckets to push data to
+pushTo:
+  - identifier: OCI.OBS.DEVEL@SH007
+    endpoint: https://s3.soulharsh007.rocks/
+    credentials:
+      accessKeyId: [REDACTED]
+      secretAccessKey: [REDACTED]
+    bucket: bucket-20220517-2008
+    region: us-east-1
+    path: RebornOS-ARM/
+    whitelist:
+      - 'RebornOS-ARM-rpi-2022-10-23.img.xz'
+  - identifier: CF.R2.DEVEL@SH007
+    endpoint: https://geo.s3.soulharsh007.rocks/
+    credentials:
+      accessKeyId: [REDACTED]
+      secretAccessKey: [REDACTED]
+    bucket: soulcdn
+    region: us-east-1
+    path: RebornOS-ARM/
+    whitelist:
+      - 'RebornOS-ARM-rpi-2022-10-23.img.xz'
+# Source - Details for the Rsync instance
+source:
+  identifier: SOURCE.DE.MIRROR@RX800
+  endpoint: rsync://de.mirror.rebornos.org/rebornos
+  ssh:
+    enabled: false
+    port: '22'
+    privateKey: /this/must/be/a/path
+    username: your-user-name-here
+# Polling Interval - Supports text format - 1s = 1 second, 1m = 1 minute, 1h = 1 hour, 1d = 1 day
+pollInterval: 1h
