@@ -9,11 +9,25 @@ export default async function syncToS3Bucket(
   s3Handle: S3Handler,
   config: Config
 ) {
-  for (const file of sourceFiles) {
-    logger.info('[Sync]', `Pushing ${file} to ${s3Handle.identifier}...`);
-    const body = await readFile(
-      join(config.cloneDir, config.source.identifier, file)
+  if (config.maxConcurrency) {
+    await Promise.all(
+      sourceFiles.map(async file => {
+        logger.info('[Sync]', `Pushing ${file} to ${s3Handle.identifier}...`);
+        const body = await readFile(
+          join(config.cloneDir, config.source.identifier, file)
+        );
+        await s3Handle.pushObject(file, body);
+        logger.success(`Pushed ${file} to ${s3Handle.identifier}`);
+      })
     );
-    await s3Handle.pushObject(file, body);
+  } else {
+    for (const file of sourceFiles) {
+      logger.info('[Sync]', `Pushing ${file} to ${s3Handle.identifier}...`);
+      const body = await readFile(
+        join(config.cloneDir, config.source.identifier, file)
+      );
+      await s3Handle.pushObject(file, body);
+      logger.success(`Pushed ${file} to ${s3Handle.identifier}`);
+    }
   }
 }

@@ -13,7 +13,7 @@ export default async function cleanupS3Bucket(
       if (object.Key && s3Handle.whitelist.includes(object.Key)) {
         logger.info('[Cleanup]', `Skipping ${object.Key} as it is whitelisted`);
       } else if (object.Key && !sourceFiles.includes(object.Key)) {
-        logger.debug('[Cleanup]', `Deleting ${object.Key}...`);
+        logger.info('[Cleanup]', `Deleting ${object.Key}...`);
         await s3Handle.deleteObject(object.Key);
       }
     }

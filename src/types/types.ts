@@ -4,6 +4,7 @@ export interface Config {
   pollInterval: number;
   pushTo: S3Instance[];
   source: RSyncInstance;
+  checkMissing: boolean;
   _state: boolean | undefined;
 }
 

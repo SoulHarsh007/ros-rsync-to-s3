@@ -55,7 +55,7 @@ const doNonConcurrentPush = async () => {
       x => x.Key
     );
     const missingData = content.filter(x => !s3Data?.includes(x));
-    if (missingData.length) {
+    if (missingData.length && config.checkMissing) {
       logger.warn(
         '[Sync]',
         `Missing data on ${s3Client.identifier}: ${missingData.join(', ')}`
@@ -91,7 +91,7 @@ const doConcurrentPush = async () => {
         x => x.Key
       );
       const missingData = content.filter(x => !s3Data?.includes(x));
-      if (missingData.length) {
+      if (missingData.length && config.checkMissing) {
         logger.warn(
           '[Sync]',
           `Missing data on ${s3Client.identifier}: ${missingData.join(', ')}`

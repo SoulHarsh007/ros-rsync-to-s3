@@ -10,7 +10,7 @@ export default async function readDirRecursive(
     const entryPath = join(path, dirEntry.name);
     if (dirEntry.isDirectory()) {
       files.push(...(await readDirRecursive(entryPath, trimPath)));
-    } else if (dirEntry.isFile()) {
+    } else if (dirEntry.isFile() || dirEntry.isSymbolicLink()) {
       files.push(entryPath.replace(trimPath, ''));
     }
   }

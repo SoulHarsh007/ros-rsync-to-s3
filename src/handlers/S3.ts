@@ -4,6 +4,7 @@ import {
   ListObjectsV2Command,
   PutObjectCommand,
   S3Client,
+  _Object,
 } from '@aws-sdk/client-s3';
 import {readdir, readFile} from 'fs/promises';
 import {join} from 'path';
@@ -18,18 +19,26 @@ export default class S3Handler {
   ) {}
 
   async listObjects(includePrefix = true) {
-    const response = await this.s3Client.send(
-      new ListObjectsV2Command({
-        Bucket: this.bucket,
-        Prefix: this.prefix,
-      })
-    );
+    let IsTruncated = true;
+    let ContinuationToken: string | undefined;
+    let Contents: _Object[] = [];
+    while (IsTruncated) {
+      const response = await this.s3Client.send(
+        new ListObjectsV2Command({
+          Bucket: this.bucket,
+          Prefix: this.prefix,
+          ContinuationToken,
+        })
+      );
+      IsTruncated = response.IsTruncated || false;
+      ContinuationToken = response.NextContinuationToken;
+      Contents = Contents.concat(response.Contents || []);
+    }
     return includePrefix
-      ? response
+      ? {Contents}
       : {
-          ...response,
           Contents:
-            response.Contents?.map(object => ({
+            Contents?.map(object => ({
               ...object,
               Key: object.Key?.replace(this.prefix, ''),
             })) ?? [],

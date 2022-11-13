@@ -11,6 +11,7 @@ let config: Partial<Config> = {
   pollInterval: 3600000,
   cloneDir: join(process.cwd(), 'rsync-clone-dir'),
   pushTo: [],
+  checkMissing: true,
   _state: true,
 };
 
