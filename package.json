@@ -2,7 +2,7 @@
   "name": "ros-rsync-to-s3",
   "type": "module",
   "version": "0.0.1-alpha",
-  "packageManager": "yarn@3.7.0",
+  "packageManager": "yarn@4.0.2",
   "devDependencies": {
     "@types/ms": "0.7.34",
     "@types/node": "18.19.3",
