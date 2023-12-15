@@ -1558,14 +1558,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/ncc@npm:0.34.0":
-  version: 0.34.0
-  resolution: "@vercel/ncc@npm:0.34.0"
+"@vercel/ncc@npm:0.38.1":
+  version: 0.38.1
+  resolution: "@vercel/ncc@npm:0.38.1"
   dependencies:
     node-gyp: "npm:latest"
   bin:
     ncc: dist/ncc/cli.js
-  checksum: 8/3282578e990572759454f7f8d7ef025f2ae060b261fcb28a96d165350e3665438dc8fb72caf122081d6c57277e4899dab30ea0d8759bfd90baf37286cb887597
+  checksum: 3e6c08251ccc8c6c7ca6523f223e326c70950af787259252c8a19ef04a7f8cc4c42d4c1ddb94f227a9d0d1c5429f71e303daf6a356948b4f81bcd38d075c9b24
   languageName: node
   linkType: hard
 
@@ -3944,7 +3944,7 @@ __metadata:
     "@types/ms": "npm:0.7.34"
     "@types/node": "npm:18.19.3"
     "@types/validator": "npm:13.7.10"
-    "@vercel/ncc": "npm:0.34.0"
+    "@vercel/ncc": "npm:0.38.1"
     chalk: "npm:5.3.0"
     chokidar: "npm:3.5.3"
     gts: "npm:5.2.0"
