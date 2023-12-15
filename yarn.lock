@@ -1407,12 +1407,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.19.3":
-  version: 18.19.3
-  resolution: "@types/node@npm:18.19.3"
+"@types/node@npm:20.10.4":
+  version: 20.10.4
+  resolution: "@types/node@npm:20.10.4"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 8/58c4fa45a78fcec75c78182a4b266395905957633654eb0311c5f9c30ac15c179ea2287ab1af034e46c2db7bb0589ef0000ee64c1de8f568a0aad29eaadb100c
+  checksum: 2c8b70cba731eb2ae3ae046daa74903bfcbb0e7b9196da767e5895054f6d252296ae7a04fb1dbbcb53bb004c4c658c05eaea2731bc9e2dd9e08f7e88d672f563
   languageName: node
   linkType: hard
 
@@ -3942,7 +3942,7 @@ __metadata:
   dependencies:
     "@aws-sdk/client-s3": "npm:3.209.0"
     "@types/ms": "npm:0.7.34"
-    "@types/node": "npm:18.19.3"
+    "@types/node": "npm:20.10.4"
     "@types/validator": "npm:13.7.10"
     "@vercel/ncc": "npm:0.34.0"
     chalk: "npm:5.3.0"
