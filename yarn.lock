@@ -3,7 +3,7 @@
 
 __metadata:
   version: 8
-  cacheKey: 10
+  cacheKey: 10c0
 
 "@aashutoshrathi/word-wrap@npm:^1.2.3":
   version: 1.2.6
@@ -3897,7 +3897,7 @@ __metadata:
     supports-preserve-symlinks-flag: "npm:^1.0.0"
   bin:
     resolve: bin/resolve
-  checksum: 551dd500765cce767c583747f5f21ceb51d437f539b01aee96d6ec39eb2c68a8ff5d646b083d690fe428a81329856bc1bbdb094379b8df4b3f10e7e1f6aa3839
+  checksum: 10/551dd500765cce767c583747f5f21ceb51d437f539b01aee96d6ec39eb2c68a8ff5d646b083d690fe428a81329856bc1bbdb094379b8df4b3f10e7e1f6aa3839
   languageName: node
   linkType: hard
 
@@ -3951,7 +3951,7 @@ __metadata:
     ms: "npm:2.1.3"
     rsyncwrapper: "npm:3.0.1"
     ts-node: "npm:10.9.2"
-    typescript: "npm:4.8.4"
+    typescript: "npm:5.3.3"
     validator: "npm:13.7.0"
     yaml: "npm:2.3.4"
   languageName: unknown
@@ -4435,23 +4435,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:4.8.4":
-  version: 4.8.4
-  resolution: "typescript@npm:4.8.4"
+"typescript@npm:5.3.3":
+  version: 5.3.3
+  resolution: "typescript@npm:5.3.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 8/3e4f061658e0c8f36c820802fa809e0fd812b85687a9a2f5430bc3d0368e37d1c9605c3ce9b39df9a05af2ece67b1d844f9f6ea8ff42819f13bcb80f85629af0
+  checksum: e33cef99d82573624fc0f854a2980322714986bc35b9cb4d1ce736ed182aeab78e2cb32b385efa493b2a976ef52c53e20d6c6918312353a91850e2b76f1ea44f
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A4.8.4#optional!builtin<compat/typescript>":
-  version: 4.8.4
-  resolution: "typescript@patch:typescript@npm%3A4.8.4#optional!builtin<compat/typescript>::version=4.8.4&hash=1a91c8"
+"typescript@patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>":
+  version: 5.3.3
+  resolution: "typescript@patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 5d81fd8cf5152091a0c0b84ebc868de8433583072a340c4899e0fc7ad6a80314b880a1466868c9a6a1f640c3d1f2fe7f41f8c541b99d78c8b414263dfa27eba3
+  checksum: 1d0a5f4ce496c42caa9a30e659c467c5686eae15d54b027ee7866744952547f1be1262f2d40de911618c242b510029d51d43ff605dba8fb740ec85ca2d3f9500
   languageName: node
   linkType: hard
 
