@@ -1504,10 +1504,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/validator@npm:13.7.10":
-  version: 13.7.10
-  resolution: "@types/validator@npm:13.7.10"
-  checksum: 8/7b142c08019f484d62c9f3074231f640c24311558f157dd253a60810dd0cb29e41ec64ca210a192b54f6de51f4fe016bfeb2c30f90fa49c9337ed54a9d8e02aa
+"@types/validator@npm:13.11.7":
+  version: 13.11.7
+  resolution: "@types/validator@npm:13.11.7"
+  checksum: 9ca2a047d6e7c1d718c6dd28b12d6d893c4ac2acdb8a557b8d448dab17aaa044e92c7a13c8476601078f4c907ed66259e3b20525f7fa849378fbaf53a971d574
   languageName: node
   linkType: hard
 
@@ -4017,7 +4017,7 @@ __metadata:
     "@aws-sdk/client-s3": "npm:3.474.0"
     "@types/ms": "npm:0.7.34"
     "@types/node": "npm:20.10.4"
-    "@types/validator": "npm:13.7.10"
+    "@types/validator": "npm:13.11.7"
     "@vercel/ncc": "npm:0.38.1"
     chalk: "npm:5.3.0"
     chokidar: "npm:3.5.3"
@@ -4026,7 +4026,7 @@ __metadata:
     rsyncwrapper: "npm:3.0.1"
     ts-node: "npm:10.9.2"
     typescript: "npm:5.3.3"
-    validator: "npm:13.7.0"
+    validator: "npm:13.11.0"
     yaml: "npm:2.3.4"
   languageName: unknown
   linkType: soft
@@ -4603,10 +4603,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"validator@npm:13.7.0":
-  version: 13.7.0
-  resolution: "validator@npm:13.7.0"
-  checksum: 8/2b83283de1222ca549a7ef57f46e8d49c6669213348db78b7045bce36a3b5843ff1e9f709ebf74574e06223461ee1f264f8cc9a26a0060a79a27de079d8286ef
+"validator@npm:13.11.0":
+  version: 13.11.0
+  resolution: "validator@npm:13.11.0"
+  checksum: 0107da3add5a4ebc6391dac103c55f6d8ed055bbcc29a4c9cbf89eacfc39ba102a5618c470bdc33c6487d30847771a892134a8c791f06ef0962dd4b7a60ae0f5
   languageName: node
   linkType: hard
 
