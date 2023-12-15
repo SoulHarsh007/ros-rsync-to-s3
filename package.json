@@ -4,7 +4,7 @@
   "version": "0.0.1-alpha",
   "packageManager": "yarn@3.2.4",
   "devDependencies": {
-    "@types/ms": "0.7.31",
+    "@types/ms": "0.7.34",
     "@types/node": "18.11.9",
     "@types/validator": "13.7.10",
     "@vercel/ncc": "0.34.0",

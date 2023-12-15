@@ -1356,10 +1356,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ms@npm:0.7.31":
-  version: 0.7.31
-  resolution: "@types/ms@npm:0.7.31"
-  checksum: daadd354aedde024cce6f5aa873fefe7b71b22cd0e28632a69e8b677aeb48ae8caa1c60e5919bb781df040d116b01cb4316335167a3fc0ef6a63fa3614c0f6da
+"@types/ms@npm:0.7.34":
+  version: 0.7.34
+  resolution: "@types/ms@npm:0.7.34"
+  checksum: f38d36e7b6edecd9badc9cf50474159e9da5fa6965a75186cceaf883278611b9df6669dc3a3cc122b7938d317b68a9e3d573d316fcb35d1be47ec9e468c6bd8a
   languageName: node
   linkType: hard
 
@@ -3710,7 +3710,7 @@ __metadata:
   resolution: "ros-rsync-to-s3@workspace:."
   dependencies:
     "@aws-sdk/client-s3": 3.209.0
-    "@types/ms": 0.7.31
+    "@types/ms": 0.7.34
     "@types/node": 18.11.9
     "@types/validator": 13.7.10
     "@vercel/ncc": 0.34.0
