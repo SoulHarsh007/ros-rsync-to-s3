@@ -4089,7 +4089,7 @@ __metadata:
     chokidar: "npm:3.6.0"
     gts: "npm:5.2.0"
     ms: "npm:2.1.3"
-    rsyncwrapper: "npm:3.0.1"
+    rsyncwrapper: "npm:3.1.0"
     ts-node: "npm:10.9.2"
     typescript: "npm:5.4.2"
     validator: "npm:13.12.0"
@@ -4097,10 +4097,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"rsyncwrapper@npm:3.0.1":
-  version: 3.0.1
-  resolution: "rsyncwrapper@npm:3.0.1"
-  checksum: 8/374f23518a59fa1f8cda965b4626cc7a4bfc49b596afd991b6e5958d25026d15f16a956c01fcec3087054168403843dad4bb1ab898fcd15f0fc6e9941348e7cd
+"rsyncwrapper@npm:3.1.0":
+  version: 3.1.0
+  resolution: "rsyncwrapper@npm:3.1.0"
+  checksum: 10c0/a20d4d01c6818dd777f062c9f9456313a99e9ec0802698b443d2c779f9a4255e9cb0ac0e37e0a63d35e47e0f6969b494964950436d60617a29bd992b7929d1de
   languageName: node
   linkType: hard
 
