@@ -4093,7 +4093,7 @@ __metadata:
     ts-node: "npm:10.9.2"
     typescript: "npm:5.4.2"
     validator: "npm:13.12.0"
-    yaml: "npm:2.4.1"
+    yaml: "npm:2.7.0"
   languageName: unknown
   linkType: soft
 
@@ -4720,12 +4720,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yaml@npm:2.4.1":
-  version: 2.4.1
-  resolution: "yaml@npm:2.4.1"
+"yaml@npm:2.7.0":
+  version: 2.7.0
+  resolution: "yaml@npm:2.7.0"
   bin:
     yaml: bin.mjs
-  checksum: 10c0/816057dbaea16a7dfb0b868ace930f143dece96bbb4c4fbb6f38aa389166f897240d9fa535dbfd6b1b0d9442416f4abcc698e63f82394d0c67b329aa6c2be576
+  checksum: 10c0/886a7d2abbd70704b79f1d2d05fe9fb0aa63aefb86e1cb9991837dced65193d300f5554747a872b4b10ae9a12bc5d5327e4d04205f70336e863e35e89d8f4ea9
   languageName: node
   linkType: hard
 
